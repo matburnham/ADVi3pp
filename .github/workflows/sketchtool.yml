@@ -24,8 +24,12 @@ jobs:
       run: pwd
     - name: ls
       run: ls -l
+    - name: ls2
+      run: ls -l LCD-Panel/Masters/
+    - name: ls3
+      run: ls -l "LCD-Panel/Masters/ADVi3++5 LCD-Panel.sketch"
     - name: Run SketchTool
-      run: Sketch.app/Contents/Resources/sketchtool/bin/sketchtool export artboards --output=assets LCD-Panel/Masters/ADVi3%2B%2B5%20LCD-Panel.sketch
+      run: Sketch.app/Contents/Resources/sketchtool/bin/sketchtool export artboards --output=assets "LCD-Panel/Masters/ADVi3++5 LCD-Panel.sketch"
     - name: ZIP Assets
       run: zip -r assets.zip assets/
     - name: Create a GitHub release
