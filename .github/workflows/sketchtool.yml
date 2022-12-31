@@ -3,7 +3,7 @@ name: SketchTool Export Assets
 on:
   push:
     branches:
-    - 'advii3\+\+'
+    - '*'
 
 jobs:
   assets:
