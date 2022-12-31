@@ -1,9 +1,9 @@
-name: SketchTool Export Assets-
+name: SketchTool Export Assets
 
 on:
   push:
     branches:
-    - master
+    - advii3++
     paths:
     - '**.sketch'
 
